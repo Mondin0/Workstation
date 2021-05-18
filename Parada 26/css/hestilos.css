@@ -1,0 +1,136 @@
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ /* [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }  */
+
+@media screen and (min-width: 600px) {
+    .cols1 {width:8,3333%; }
+    .cols2 {width:16,666%; }
+    .cols3 {width: 25%;}
+    .cols4 {width:33,3333%;}
+    .cols5 {width:41,66666%;}
+    .cols6 {width: 50%;}
+    .cols7 {width:58,33333%; }
+    .cols8 {width:66,666%;}
+    .cols9 {width:75%}
+    .cols10 {width:83,33333%}
+    .cols11 {width:91,666666%}
+    .cols12 {width: 100%}
+}
+
+@media screen and (min-width: 768px) {
+    .col-1 {width:8,3333%}
+    .col-2 {width:16,666% }
+    .col-3 {width: 25%}
+    .col-4 {width:33,3333%}
+    .col-5 {width:41,66666%}
+    .col-6 {width: 50%}
+    .col-7 {width:58,33333%}
+    .col-8 {width:66,666%}
+    .col-9 {width:75%}
+    .col-10 {width:83,33333%}
+    .col-11 {width:91,666666%}
+    .col-12 {width: 100%}
+}
+
+@media screen and (min-width: 992px) {
+    .col-n-1 {width:8,3333%}
+    .col-n-2 {width:16,666% }
+    .col-n-3 {width: 25%}
+    .col-n-4 {width:33,3333%%}
+    .col-n-5 {width:41,66666%}
+    .col-n-6 {width: 50%}
+    .col-n-7 {width:58,33333%}
+    .col-n-8 {width:66,666%}
+    .col-n-9 {width:75%}
+    .col-n-10 {width:83,33333%}
+    .col-n-11 {width:91,666666%}
+    .col-n-12 {width: 100%}
+}
+
+body {
+    background-color: rgb(139, 139, 139);
+    font-family: sans-serif;
+    arial
+}
+
+.header {
+    display: grid;
+    background-color: coral; 
+    grid-template-areas: "logo logo logo" "logo logo logo" "registro pedidos aboutus";
+    place-items: stretch center ;
+    grid-gap: 10px;
+}
+
+.a {
+    grid-area: logo;
+    background-color: coral
+}
+
+.b {
+    grid-area: registro;
+    background-color: coral;
+    padding: 10px;
+}
+
+.c {
+    grid-area: pedidos;
+    background: coral;
+    padding: 10px;
+}
+
+.d {
+    grid-area: aboutus;
+    background: coral;
+    padding: 10px;
+}
+
+.foto, .form {
+    /* width: 100; */
+    border-width: 3px;
+    border-style: inset;
+    border-color: black;
+
+}
+
+
+nav h1, main article h3, #msje, table tr td, p, .testo, footer {
+    text-align: center;
+}
+
+.divpedido{
+    background-color: white;
+}
+
+#foteli #formulario {
+    align-items: center;
+}
+
+footer {
+    background-color: coral;
+}
+
+img {
+    display: inline-block;
+    margin: auto;
+}
+
+a:visited , a:link  {
+    color: black;
+    font-weight: bold;
+}
+
+.hober:hover {
+    background-color: goldenrod;
+    transition: all 0.2s ease-in
+}
+
+.hober:active {
+    background-color: gold;
+}
